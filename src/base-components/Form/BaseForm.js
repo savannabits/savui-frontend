@@ -384,11 +384,11 @@ const BaseForm = {
     },
     shouldShowLangGroup(locale) {
       if (!this.onSmallScreen) {
-        if (this.defaultLocale == locale) return true;
+        if (this.defaultLocale === locale) return true;
 
-        return this.isFormLocalized && this.currentLocale == locale;
+        return this.isFormLocalized && this.currentLocale === locale;
       } else {
-        return this.currentLocale == locale;
+        return this.currentLocale === locale;
       }
     },
     onResize() {
